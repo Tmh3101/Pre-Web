@@ -1,0 +1,16 @@
+div {
+    width: 350px;
+    border: 1px solid #000000;
+}
+
+div {
+    align-self : top;
+}
+
+div.b {
+    word-wrap: break-word;
+}
+
+.b {
+    color: blue!important
+}
