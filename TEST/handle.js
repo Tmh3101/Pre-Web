@@ -1,7 +1,12 @@
+var content = document.getElementById("content");
 var btn = document.getElementById("btn");
-var p = document.getElementById("paragraph");
+var list = document.getElementById("list");
 
-btn.onblur = function(){
-    if(p.style.backgroundColor == "") p.style.backgroundColor = "red";
-    else p.style.backgroundColor = "";
+function kt(){
+    var li = document.createElement('li');
+    li.textContent = content.value;
+    list.appendChild(li);
+
+    content.value = "";
+    content.focus();
 }
