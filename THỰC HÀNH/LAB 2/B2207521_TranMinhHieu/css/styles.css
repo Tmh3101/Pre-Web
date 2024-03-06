@@ -1,36 +1,88 @@
+body {
+    display: grid;
+    top: 0px;
+    margin: 0 auto;
+    border: 1px;
+    padding: 0 5px;
+    max-width: 1024px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "header-cell" "nav-cell" "main-cell" "footer-cell";
+}
+
+header{
+    grid-area: header-cell;
+}
+
+nav{
+    grid-area: nav-cell;
+}
+
+main{
+    grid-area: main-cell;
+    display: grid;
+}
+
+header,main,footer{
+    border: 1px solid #ccc7c8;
+    border-radius: 5px;
+    padding: 0 5px;
+    background: #fff;
+}
+
 header {
     position: relative;
     display: block;
     margin-bottom: 2px;
-    border: 1px solid #ccc7c8;
-    border-radius: 5px;
-    padding: 0 5px;
     height: 100px;
     background-image: url("images/header.png");
 }
 
-body {
-    display: grid;
-    top: 0px;
-    margin: 0px auto;
-    border: 1px;
-    padding: 0 5px;
-    width: 1024px;
-    font-size: 17px;
-    font-family: Helvetica, arial, sans-serif;
+/*1 col*/
+main.one-col{
+    grid-template-areas: 
+    "left-cell" 
+    "article-cell" 
+    "right-cell";
+}
+/*2 left cols*/
+main.two-cols-left{
+    grid-template-areas: "left-cell" "article-cell";
+    grid-template-columns: 1fr 3fr;
+}
+/*2 right col*/
+main.two-cols-right{
+    grid-template-areas: "article-cell" "right-cell";
+    grid-template-columns: 3fr 1fr;
+}
+/*3 cols*/
+main.three-cols{
+    grid-template-areas: "left-cell" "article-cell" "right-cell";
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
-main {
-    display: grid;
-    border: 1px solid #ccc7c8;
-    border-radius: 5px;
-    padding: 0 5px;
-    color: #fff;
+article{
+    grid-area: article-cell;
 }
 
-aside {
+aside.left-side{
+    grid-area: left-cell;
+}
+
+aside.right-side{
+    grid-area: right-cell;
+}
+
+aside.left-side,aside.right-side{
     margin: 2px;
     padding: 5px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+footer {
+    grid-area: footer-cell;
+    margin-top: 2px;
     color: #000;
 }
 
@@ -117,13 +169,7 @@ main img {
     border-radius: 5px;
 }
 
-footer {
-    margin-top: 2px;
-    border-radius: 5px;
-    border: 1px solid #ccc7c8;
-    padding: 0 5px;
-    color: #000;
-}
+
 
 footer p {
     text-align: center;
