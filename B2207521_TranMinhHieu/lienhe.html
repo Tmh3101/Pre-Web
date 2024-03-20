@@ -46,19 +46,19 @@
 
 
 
-            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <form onsubmit="return lienhe_check(this);" action="#" method="post" enctype="application/x-www-form-urlencoded">
                 <fieldset>
                     <legend>Góp ý</legend>
                     <table>
 
                         <tr>
                             <td><label for="hoTen">Họ Tên:</label></td>
-                            <td><input id="hoTen" type="text" placeholder="Vui lòng nhập tên của bạn"></td>
+                            <td><input name="hoTen" id="hoTen" type="text" placeholder="Vui lòng nhập tên của bạn"></td>
                         </tr>
 
                         <tr>
                             <td><label for="email">Email:</label></td>
-                            <td><input id="email" type="email" placeholder="Vui lòng nhập địa chỉ email"></td>
+                            <td><input name="email" id="email" type="email" placeholder="Vui lòng nhập địa chỉ email"></td>
                         </tr>
                         
                         <tr>
@@ -78,7 +78,7 @@
 
                         <tr>
                             <td colspan="2">
-                                <textarea name="" id="" cols="50" rows="7" placeholder="Nội dung cần liên hệ"></textarea>
+                                <textarea name="content" id="" cols="50" rows="7" placeholder="Nội dung cần liên hệ"></textarea>
                             </td>
                         </tr>
                         
@@ -108,4 +108,5 @@
 		</div>
 	</footer>	
 </body>
+<script src="js/main.js"></script>
 </html>

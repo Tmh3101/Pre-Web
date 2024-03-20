@@ -10,11 +10,13 @@ body {
     "nav-cell"
     "main-cell"
     "footer-cell";
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 main {
+    grid-area: main-cell;
     display: grid;
-    border: 1px;
+    border: 1px solid #ccc7c8;
     border-radius: 5px;
     border-color: #ccc7c8;
     padding: 0 5px;
@@ -26,6 +28,7 @@ aside {
     padding: 5px;
     text-align: justify;
     color: #000;
+    text-justify: inter-word;
 }
 
 /*1 col*/
@@ -56,12 +59,16 @@ main.three-cols, .three-cols {
 
 header {
     grid-area: header-cell;
+    display: block;
+    position: relative;
     border: 1px solid;
     border-radius: 5px;
     border-color: #ccc7c8;
     padding: 0 5px;
     height: 100px;
     background-image: url("/data/images/header.png");
+    grid-template-columns: 2 2;
+    grid-template-rows: 2 2;
 }
 
 #header-img1 {
@@ -85,7 +92,7 @@ header {
     position: absolute;
     top: 0px;
     margin-left: 63%;
-    animation: moveImg 3s 1;
+    animation: moveImg 3s 1 normal forwards;
 } 
 
 @keyframes moveImg {
@@ -95,6 +102,7 @@ header {
 }
 
 nav {
+    grid-area: nav-cell;
     margin-top: 20px;
     grid-column: 1;
     grid-row: 2;
@@ -158,6 +166,7 @@ main img {
 }
 
 footer {
+    grid-area: footer-cell;
     border: 1 #ccc7c8;
     border-radius: 5px;
     margin-top: 2px;
@@ -185,6 +194,7 @@ footer a {
 }
 
 article {
+    grid-area: article-cell;
     display: grid;
     grid-row: auto;
 }
@@ -321,15 +331,6 @@ p {
     text-align: justify;
     line-height: 2;
 }
-
-
-
-
-
-
-
-
-
 
 p {
     color: #000;

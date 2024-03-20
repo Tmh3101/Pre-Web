@@ -38,7 +38,7 @@
         </header>
     <main>
         <article>
-            <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <form onsubmit="return form_check(this);" action="#" method="post" enctype="application/x-www-form-urlencoded">
                 <fieldset>
                     <legend><h1>Đăng Ký</h1></legend>
                     <table>
@@ -49,24 +49,24 @@
 
                         <tr>
                             <td><label for="email"><h4>Email</h4></label></td>
-                            <td><input id="email" type="email" placeholder="Nhập email"></td>
+                            <td><input name="email" id="email" type="email" placeholder="Nhập email" required></td>
                         </tr>
                         
                         <tr>
                             <td><label for="psw"><h4>Mật Khẩu</h4></label></td>
-                            <td><input id="psw" type="password" name="psw" placeholder="Nhập mật khẩu"></td>
+                            <td><input name="psw" id="psw" type="password" name="psw" placeholder="Nhập mật khẩu" required></td>
                         </tr>
                         
                         <tr>
                             <td><label for="psw2"><h4>Nhập Lại Mật Khẩu</h4></label></td>
-                            <td><input id="psw2" type="password" name="psw2" placeholder="Nhập mật khẩu"></td>
+                            <td><input name="psw2" id="psw2" type="password" name="psw2" placeholder="Nhập mật khẩu" required></td>
                         </tr>
                         
                         <tr>
                             <td></td>
                             <td>
-                                <input type="reset" value="Hủy">
-                                <input type="submit" value="Đăng Nhập">
+                                <button type="button">Hủy</button>
+                                <button type="submit">Đăng Nhập</button>
                             </td>
                         </tr>
 
@@ -98,4 +98,5 @@
 		</div>
 	</footer>	
 </body>
+<script src="js/main.js"></script>
 </html>
