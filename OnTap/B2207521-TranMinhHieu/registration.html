@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
 
         <img src="images/logo.png" alt="" id="logo">
+
         <img src="images/logo2.png" alt="" id="logo2">
 
         <h1 id="siteTitle">Trường CNTT&TT</h1>
-        <h1 id="siteTitle2">Hệ Thống Quản Lí Đào Tạo</h1>
+        <h1 id="siteTitle2">Hệ Thống Quản Lý Đào Tạo</h1>
 
         <nav>
-
             <div id="menu">
                 <a href="index.html">Trang chủ</a>
                 |
@@ -29,44 +29,40 @@
                 |
                 <a href="login.html">Đăng nhập</a>
             </div>
-
         </nav>
     </header>
 
     <main>
-
         <div id="leftSide">
             <div class="group-box leftMenu">
                 <h1 class="title">DANH MỤC</h1>
                 <ul>
-                    <li><a href="">Khoa - Viện</a></li>
-                    <li><a href="">Giảng Viên</a></li>
-                    <li><a href="">Sinh Viên</a></li>
-                    <li><a href="">Ngành Đào Tạo</a></li>
-                    <li><a href="">Lớp Chuyên Ngành</a></li>
-                    <li><a href="">Lớp Học Phần</a></li>
-                    <li><a href="">Môn Học</a></li>
+                    <li>Khoa - Viện</li>
+                    <li>Giảng Viên</li>
+                    <li>Sinh Viên</li>
+                    <li>Ngành Đào Tạo</li>
+                    <li>Lớp Chuyên Ngành</li>
+                    <li>Lớp Học Phần</li>
+                    <li>Môn Học</li>
                 </ul>
             </div>
-
             <div class="group-box leftMenu">
                 <h1 class="title">Menu</h1>
                 <ul>
-                    <li><a href="">Link 1</a></li>
-                    <li><a href="">Link 2</a></li>
-                    <li><a href="">Link 3</a></li>
-                    <li><a href="">Link 4</a></li>
-                    <li><a href="">Link 5</a></li>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                    <li>Link 5</li>
                 </ul>
-
             </div>
-        </div>  
+        </div>
 
         <div id="mainContent">
             <div class="group-box">
-                <h1 class="title" style="text-align: center;">Đăng ký</h1>
-                <form action="">
-                    <table style="margin-left: 30%;">
+                <h1 class="title">Thông tin Đăng ký</h1>
+                <form action="#">
+                    <table>
                         <tr>
                             <td>MSSV: </td>
                             <td>
@@ -84,9 +80,10 @@
                         <tr>
                             <td>Giới tính: </td>
                             <td>
-                                <input type="radio" id="nam" value="name" name="gioiTinh">
+                                <input type="radio" id="nam" name="gioiTinh">
                                 <label for="nam">Nam</label>
-                                <input type="radio" id="nu" value="nu" name="gioiTinh">
+
+                                <input type="radio" id="nu" name="gioiTinh">
                                 <label for="nu">Nữ</label>
                             </td>
                         </tr>
@@ -101,7 +98,7 @@
                         <tr>
                             <td>Quê quán: </td>
                             <td>
-                                <textarea name="queQuan" id="queQuan" cols="20" rows="2"></textarea>
+                                <textarea id="queQuan" cols="20" rows="2"></textarea>
                             </td>
                         </tr>
 
@@ -115,7 +112,7 @@
                         <tr>
                             <td>Email: </td>
                             <td>
-                                <input type="text" id="email" placeholder="lvquan@gamil.com">
+                                <input type="text" id="email" placeholder="lvquan@gmail.com">
                             </td>
                         </tr>
 
@@ -129,7 +126,7 @@
                         <tr>
                             <td>Mật khẩu: </td>
                             <td>
-                                <input type="password" id="psw1" placeholder="8 - 20 ký tự">
+                                <input type="password" id="psw" placeholder="8 - 20 ký tự">
                             </td>
                         </tr>
 
@@ -143,21 +140,19 @@
                         <tr>
                             <td></td>
                             <td>
-                                <button type="button" onclick="dangKy()">Đăng ký</button>
+                                <button type="button" onclick="dangKy()">Đăng Ký</button>
                                 <button type="reset">Hủy</button>
                             </td>
                         </tr>
-
                     </table>
                 </form>
             </div>
-        </div>        
-
+        </div>
     </main>
 
     <footer>
-        <p style="text-align: center; margin-top: 2px;">Copy right C 2020</p>
+        <p class="copyright">Copyright (c) 2020</p>
     </footer>
 </body>
-<script src="main.js"></script>
+<script src="js/main.js"></script>
 </html>

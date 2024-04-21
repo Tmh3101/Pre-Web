@@ -1,15 +1,15 @@
-body{
-	background-color: #B2C2D1;
+body {
 	font-family: Arial, Helvetica, Sans-Serif;
+	font-style: normal;
+	font-weight: normal;
 	font-size: 13px;
 	width:1000px;
 	
 	margin-left:auto;
 	margin-right:auto;
 	margin-top: 20px;
-
-	 
-	/* Border */
+ 	background-color: #FFF;
+		/* Border */
 	border-radius: 10px 10px  10px 10px;
 	-moz-border-radius: 10px 10px 10px 10px; 
 	-webkit-border-radius: 10px 10px 10px 10px; 
@@ -20,10 +20,11 @@ body{
 	border:solid 1px #808080;
 	 
 }
-header{
+
+header {
 	width:1000px;
 	height:150px;
-	position:relative;
+	position: relative;
 	
 	background-image:url(../images/header.png);
 	background-repeat:repeat-x;
@@ -33,7 +34,7 @@ header{
 	-webkit-border-radius: 10px 10px  0px 0px;
 }
 
-footer{	 
+footer {	 
 	position:relative;
 	height:30px;
 	background-color:   #4294DE;
@@ -42,8 +43,7 @@ footer{
 	-moz-border-radius: 0px 0px 10px 10px; ;
 	-webkit-border-radius: 0px 0px 10px 10px; ; 
 	border: 1px solid #ddd;
-
-	/*làm thêm*/
+	
 	color: #c6c6c6;
 	text-shadow: 0 1px 0 #3372EB;
 	font-weight:bold;
@@ -52,37 +52,36 @@ footer{
 	
 }
 
-#logo{
-	position:relative;
-	left:10px;
-	top:10px;
-	width:130px;
-	height: 130px;
+#logo {
+	position: relative;
+	margin: 15px 15px;
+	height: 118px;
 }
-#logo2{
-	position: absolute;
-	right: 65px;
-	top: 40px;
-	width:320px;
-	height:110px;
+
+#logo2 {
+	float: right;
+	margin-right: 90px;
+	margin-top: 45px;
+	height: 105px;
+}
 	
-}
-#siteTitle{
+#siteTitle {
 	position:absolute;
-	left: 140px;
-	top: 80px;
+	left: 120px;
+	bottom: 10px;
 	font-size:24px;
-	color:#0000FF;
-	text-shadow: 2px 2px 5px #000;
+	color: blue;
+	text-shadow: 2px 2px 4px #000;
 	
 }
-#siteTitle2{
+
+#siteTitle2 {
 	position:absolute;
 	right: 95px;
 	top: 0px;
 	font-size:20px;
 	color:#FF1F00;
-	text-shadow: 1px 1px 1px #000;
+	text-shadow: 2px 2px 4px #000;
 	
 }
 
@@ -90,10 +89,12 @@ nav {
 	position:relative;
 	width: 980px;
 	height:26px;
-	margin-top: 0;
+	 
+	/* Borders */
+	
 	background-color:   #4294DE;
-
-	/* thêm*/
+     
+    margin-top: 0;
     color:#fff;
     font-size:12pt;
     font-weight:bold;
@@ -106,20 +107,25 @@ nav {
 	padding-top: 10px;
 	padding-left: 10px;
 	padding-right:10px;
+	
+	
 	text-shadow: 0 1px 0 #fff;
 	font-weight:bold;
 }
-nav a{
+
+nav a { 
 	text-decoration: none;
 	color:#fff;
 	font-size:13pt;
     font-weight:bold;
     text-shadow:0 1px 0 #777;
 }
-nav a:visited{
+
+nav a:visited {
 	color:#fff;
 }
-nav a:hover{
+
+nav a:hover {
 	color:#FF981D;
 }
 
@@ -136,14 +142,11 @@ nav #menu{
 	float:left;
 }
 
-
-main{
+main {
+	margin-top: 36px;
 	position: relative;
-	width:1000px;
-	background-color: #FFF;	
-	
-	margin-top: 20px;
-	height: 500px;
+	width:1000px;	
+	height: 500px; 
 }
 
 #leftSide{
@@ -153,30 +156,35 @@ main{
 	width: 180px;
 	float: left;
 	min-height: 250px;
+	 
+	
 }
-
 #mainContent{	
 	position: relative;
 	top: 10px;
 	left:200px;
 	width: 790px;
 	min-height: 520px;
+	/*background-color:blue;*/
+	 
 }
 
 .leftMenu ul{
 	list-style: none;	
-	margin: 0px;
+	margin: 0;
 	padding: 10px;	
 	padding-top: 0; 
 }
-.leftMenu ul li{
+
+.leftMenu ul li {
 	text-shadow: 0 1px 0 #fff;
 	font-weight:bold;
 	line-height: 24px;
 	padding-left: 4px;
 	cursor: pointer;
-	 
+	color: blue;
 }
+
 .leftMenu ul li:hover{	 
 	 background-color:#ddd;	 
 }
@@ -189,8 +197,8 @@ main{
 	color: #0A5BC4;	
 }
 
-
 .group-box {
+ 	 
     border:1px solid #999;
     background:#f3f3f3;
 	
@@ -202,7 +210,8 @@ main{
     -webkit-box-shadow:2px 2px 5px #ccc;
     box-shadow:3px 3px 10px #ddd;
     margin-bottom:  10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
+	
 }
  
 .group-box .title {
@@ -210,9 +219,7 @@ main{
 	height: 22px;
     padding: 5px 10px;
     margin-top: 0;
-	color:#fff;
-	
-	/*thêm*/
+    color:#fff;
     font-size:13pt;
     font-weight:bold;
     text-shadow:0 1px 0 #777;
@@ -221,14 +228,36 @@ main{
     box-shadow: 1px 1px 15px  #999 inset;
 }
 
+#mainContent .title {
+	text-align: center;
+}
 
-div.error  {
-    
-    font-weight:        bold;
-    text-align:         left;
+.content-title {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.content {
+	text-align: center;
+	font-size: 12px;
+}
+
+.copyright {
+	margin-top: 2px;
+}
+
+form {
+	margin-left: 30%;
+}
+
+
+div.error {
+    font-weight: bold;
+    text-align: left;
     color:red;
 }
-div.error a{
+div.error a {
 	text-decoration: none;
 }
 
