@@ -71,18 +71,18 @@
             <div class="group-box">
                 <div class="title">Đăng nhập</div>
                 <div class="form-container">
-                    <form action="">
+                    <form action="#">
                         <table>
                             <tr>
                               <td>Username:</td>
                               <td>
-                                <input class="input-enter" type="text">
+                                <input class="input-enter" type="text" id="username">
                               </td>
                             </tr>
                             <tr>
                                 <td>Password:</td>
                                 <td>
-                                  <input class="input-enter" type="password">
+                                  <input class="input-enter" type="password" id="password">
                                 </td>
                             </tr>
                             <tr>
@@ -95,8 +95,8 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <button>Đăng nhập</button>
-                                    <button>Hủy</button>
+                                    <button type="button" id="dn-btn" onclick="dangNhap()">Đăng nhập</button>
+                                    <button type="reset">Hủy</button>
                                 </td>
                             </tr>
                         </table>

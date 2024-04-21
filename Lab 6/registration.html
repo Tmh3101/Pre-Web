@@ -88,9 +88,9 @@
                             <tr>
                                 <td>Giới tính:</td>
                                 <td>
-                                  <input type="radio" id="nam" name="gioiTinh" id="nam">
+                                  <input type="radio" id="nam" name="gioiTinh" value="nam">
                                   <label for="nam">Nam</label>
-                                  <input type="radio" id="nu" name="gioiTinh" id="nu">
+                                  <input type="radio" id="nu" name="gioiTinh" value="nu">
                                   <label for="nu">Nữ</label>
                                 </td>
                             </tr>
@@ -139,8 +139,8 @@
                             <tr>
                                 <td></td>
                                 <td>
-                                    <button id="dk-btn">Đăng ký</button>
-                                    <button>Hủy</button>
+                                    <button type="button" id="dk-btn" onclick="dangKy()">Đăng ký</button>
+                                    <button type="reset">Hủy</button>
                                 </td>
                             </tr>
                         </table>
